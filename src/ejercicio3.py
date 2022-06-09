@@ -54,7 +54,10 @@ def principal():
     lista = hacedor_de_listas()
     otra_lista = hacedor_de_listas()
     resultado = superposicion(lista, otra_lista)
-    print(f"Las listas se tienen una superposición de {resultado} elementos")
+    if resultado == 0:
+        print(f"Las listas no tienen elementos superpuestos")
+    else:
+        print(f"Las listas tienen {resultado} elementos superpuestos")
 
 
 if __name__ == "__main__":
