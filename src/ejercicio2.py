@@ -20,6 +20,7 @@ def lista_general():
         numero = int(input("Ingrese un número para añadirlo a la lista "))
         lista.append(numero)
         contador += 1
+    tuple(lista)
     return lista
 
 
