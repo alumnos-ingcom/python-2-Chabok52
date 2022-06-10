@@ -20,7 +20,6 @@ def sucesion_fibonacci(numero):
     contador = 1
     otro_contador = 1
     total = 0
-    clon_numero = numero
     while numero - 2 > 0:
         total = contador + otro_contador
         otro_contador = contador
