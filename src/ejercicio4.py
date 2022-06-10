@@ -34,7 +34,7 @@ def principal():
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    numero = int(input("Ingrese un número mayor a dos "))
+    numero = int(input("Ingrese un número mayor a dos: "))
     resultado = sucesion_fibonacci(numero)
     print(f"Su número equivale a {resultado} en la sucesion fibonacci")
 
