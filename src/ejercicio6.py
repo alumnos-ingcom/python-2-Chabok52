@@ -47,7 +47,6 @@ def cifrado_cesar(texto, rotaciones):
                 diferencia = letra_a_numero - 57
                 letra_a_numero = 48
                 letra_a_numero += diferencia - 1
-            rotacion += chr(letra_a_numero)
         elif letra_a_numero >= 97 and letra_a_numero <= 122:
             if rotaciones > 26:
                 while rotaciones > 26:
@@ -57,7 +56,6 @@ def cifrado_cesar(texto, rotaciones):
                 diferencia = letra_a_numero - 122
                 letra_a_numero = 97
                 letra_a_numero += diferencia - 1
-            rotacion += chr(letra_a_numero)
         elif letra_a_numero >= 65 and letra_a_numero <= 90:
             if rotaciones > 26:
                 while rotaciones > 26:
@@ -67,7 +65,7 @@ def cifrado_cesar(texto, rotaciones):
                 diferencia = letra_a_numero - 90
                 letra_a_numero = 65
                 letra_a_numero += diferencia - 1
-            rotacion += chr(letra_a_numero)
+        rotacion += chr(letra_a_numero)
     return rotacion
 
 
@@ -90,7 +88,6 @@ def descifrado_cesar(texto, rotaciones):
                 diferencia = 48 - letra_a_numero
                 letra_a_numero = 57
                 letra_a_numero -= diferencia - 1
-            rotacion += chr(letra_a_numero)
         elif letra_a_numero >= 97 and letra_a_numero <= 122:
             if rotaciones > 26:
                 while rotaciones > 26:
@@ -100,7 +97,6 @@ def descifrado_cesar(texto, rotaciones):
                 diferencia = 97 - letra_a_numero
                 letra_a_numero = 122
                 letra_a_numero -= diferencia - 1
-            rotacion += chr(letra_a_numero)
         elif letra_a_numero >= 65 and letra_a_numero <= 90:
             if rotaciones > 26:
                 while rotaciones > 26:
@@ -110,7 +106,7 @@ def descifrado_cesar(texto, rotaciones):
                 diferencia = 65 - letra_a_numero
                 letra_a_numero = 90
                 letra_a_numero -= diferencia - 1
-            rotacion += chr(letra_a_numero)
+        rotacion += chr(letra_a_numero)
     return rotacion
 
 
